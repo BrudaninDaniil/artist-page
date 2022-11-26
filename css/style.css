@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page__body {
+    font-family: 'Poiret One', cursive;
+    background-color: var(--color-black);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.soc_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px;
+    justify-items: center;
+    
+
+}
+
+.soc_nav * {
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+}
+
+.logo {
+    filter:grayscale(1)
+}
+
+.logo:hover {
+    filter: grayscale(0);
+}
+
+
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url('../img/2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 60px 100px rgba(0, 0, 0, 0.8), inset 0px 50px 60px 100px #000000;
+    filter: grayscale(100%);
+}
+
+/* Concerts */
+.concerts {
+    height: 100vh;
+    padding: 50px 0px; 
+}
+
+.concerts__heading {
+    padding: 10px 30px;
+    color: var(--color-white);
+    font-size: 50px;
+    text-align: center;
+    background-color: var(--color-black);
+    
+}
+
+.concerts__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.concert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(101, 136, 250);
+}
+
+.concert__date,
+.concert__city,
+.concert__place,
+.concert__buy {
+    flex-basis: 32%;
+    color: var(--color-white);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.concert__buy {
+    flex-basis: 4%;
+}
+
+.concert__link {
+    padding: 10px 20px;
+    background-color: rgb(101, 136, 250);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+.concert__link:hover {
+    filter: brightness(50%);
+}
